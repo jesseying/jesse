@@ -30,27 +30,27 @@ const router = new Router({
       name: 'main',
       component: Main,
       children : [
-        // 新闻分类
+        // News classification
         { path : '/categories/create', component : CategoryEdit },
         { path : '/categories/edit/:id', component : CategoryEdit, props: true },
         { path : '/categories/list', component : CategoryList },
-        // 物品分类
+        // Item classification
         { path : '/items/create', component : ItemEdit },
         { path : '/items/edit/:id', component : ItemEdit, props: true },
         { path : '/items/list', component : ItemList },
-        // 英雄分类
+        // Hero classification
         { path : '/heroes/create', component : HeroEdit },
         { path : '/heroes/edit/:id', component : HeroEdit, props: true },
         { path : '/heroes/list', component : HeroList },
-        // 文章分类
+        // Article categorization
         { path : '/articles/create', component : ArticleEdit },
         { path : '/articles/edit/:id', component : ArticleEdit, props: true },
         { path : '/articles/list', component : ArticleList },
-        // 广告位分类
+        // Ad slot classification
         { path : '/ads/create', component : AdEdit },
         { path : '/ads/edit/:id', component : AdEdit, props: true },
         { path : '/ads/list', component : AdList },
-        // 管理员分类
+        // Administrator classification
         { path : '/admin_users/create', component : AdminUserEdit },
         { path : '/admin_users/edit/:id', component : AdminUserEdit, props: true },
         { path : '/admin_users/list', component : AdminUserList }
