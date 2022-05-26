@@ -3,7 +3,7 @@
     <div class="topbar bg-black py-2 px-4 d-flex ai-center text-while">
       <img src="../assets/logo.png" alt="logo" height="30">
       <div class="px-2 flex-1">
-        <span class="text-white">王者荣耀</span>
+        <span class="text-white">游戏中心</span>
         <span class="ml-2">攻略站</span>
       </div>
       <router-link to="/" tag="div">更多英雄&gt;</router-link>
@@ -77,7 +77,7 @@
               <m-card plain icon="Menu" title="出装推荐" class="hero-items">
                 <div class="fs-xl">顺风出装</div>
                 <div class="d-flex jc-around text-center mt-3">
-                  <div v-for="item in model.items1" :key="model.name">
+                  <div v-for="item in model.items1" :key="item.name">
                     <img :src="item.icon" :alt="item.icon" class="icon">
                     <div class="fs-xs">{{item.name}}</div>
                   </div>
@@ -85,7 +85,7 @@
                 <div class="border-bottom mt-3"></div>
                 <div class="fs-xl mt-3">逆风出装</div>
                 <div class="d-flex jc-around text-center mt-3">
-                  <div v-for="item in model.items2" :key="model.name">
+                  <div v-for="item in model.items2" :key="item.name">
                     <img :src="item.icon" :alt="item.icon" class="icon">
                     <div class="fs-xs">{{item.name}}</div>
                   </div>

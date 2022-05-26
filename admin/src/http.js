@@ -2,6 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 import router from './router'
 // 将接口封装并导出
+// Encapsulate and export the interface
 const http = axios.create({
 	baseURL : process.env.VUE_APP_API_URL || '/admin/api',
 	// baseURL: 'http://localhost:3000/admin/api'

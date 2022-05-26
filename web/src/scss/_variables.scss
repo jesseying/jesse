@@ -48,8 +48,10 @@ $flex-ai: (
 
 // spacing
 // 内外边距
+// Padding and margins
 $spacing-types: ( m: margin, p: padding );
 // 边距的样式上右下左
+// Margin style: Top Right Bottom Left
 $spacing-directions: ( t: top, r: right, b: bottom, l: left);
 // 初始大小1rem=13px
 $spacing-base-size: 1rem;
