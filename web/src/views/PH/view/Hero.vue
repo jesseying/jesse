@@ -1,7 +1,7 @@
 <template>
   <div v-if="model">
     <div class="topbar bg-black py-2 px-4 d-flex ai-center text-while">
-      <img src="../assets/logo.png" alt="logo" height="30">
+      <img src="../assets/img/logo.png" alt="logo" height="30">
       <div class="px-2 flex-1">
         <span class="text-white">游戏中心</span>
         <span class="ml-2">攻略站</span>
@@ -134,7 +134,6 @@ export default {
     async fetch() {
       const res = await this.$http.get(`heroes/${this.id}`)
       this.model = res.data
-      console.log(this.model)
     }
   },
   created() {
@@ -149,7 +148,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/variables";
+@import "src/views/PH/scss/variables";
 .top {
   height: 50vw;
   background: #fff no-repeat top center;

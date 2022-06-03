@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/_variables.scss";
+@import "src/views/PH/scss/variables";
 
 .card {
   border-bottom: 1px solid $border-color;
