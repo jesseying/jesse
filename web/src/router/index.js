@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/PH/view/Home.vue'
-import Hero from '../views/PH/view/Hero.vue'
-import Main from "../views/PH/view/Main";
-import Article from "../views/PH/view/Article";
+import Home from '../views/Home.vue'
+import Hero from '../views/heros/Hero.vue'
+import Main from "../views/components/Main"
+import Article from "../views/news/Article"
 import index from "../views";
 // import {resolve} from "@babel/core/lib/vendor/import-meta-resolve";
 
@@ -13,11 +13,11 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/index'
+    redirect: '/main'
   },
   {
-    path: '/index',
-    name: 'index',
+    path: '/main',
+    name: 'main',
     component: index,
     children: [
       {
@@ -45,8 +45,6 @@ const routes = [
       }
     ]
   },
-  
-  
 ]
 
 const router = new VueRouter({
