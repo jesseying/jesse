@@ -2,16 +2,16 @@
   <div>
     <swiper :options="swiperOption">
       <swiper-slide>
-        <img class="w-100" src="../assets/img/ATRI.png" alt="">
+        <img class="w-100" src="../../assets/img/ATRI.png" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img class="w-100" src="../assets/img/CANG.png" alt="">
+        <img class="w-100" src="../../assets/img/CANG.png" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img class="w-100" src="../assets/img/OU.png" alt="">
+        <img class="w-100" src="../../assets/img/OU.png" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img class="w-100" src="../assets/img/YU.png" alt="">
+        <img class="w-100" src="../../assets/img/YU.png" alt="">
       </swiper-slide>
       <div class="swiper-pagination pagination-home text-right px-3 pb-2" slot="pagination"></div>
     </swiper>
@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "src/views/PH/scss/variables";
+@import "../../scss/variables";
 
 .pagination-home {
   .swiper-pagination-bullet {

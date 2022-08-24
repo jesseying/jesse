@@ -4,8 +4,7 @@ import Home from '../views/PH/view/Home.vue'
 import Hero from '../views/PH/view/Hero.vue'
 import Main from "../views/PH/view/Main";
 import Article from "../views/PH/view/Article";
-import PCindex from "../views/PC/pcindex";
-import PHindex from "../views/PH/phindex";
+import index from "../views";
 // import {resolve} from "@babel/core/lib/vendor/import-meta-resolve";
 
 
@@ -14,19 +13,12 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/pcindex'
+    redirect: '/index'
   },
-  // PC
   {
-    path: '/',
-    name: '/pcindex',
-    component: PCindex
-  },
-  // PH
-  {
-    path: '/phindex',
-    name: 'phindex',
-    component: PHindex,
+    path: '/index',
+    name: 'index',
+    component: index,
     children: [
       {
         path: '/',
