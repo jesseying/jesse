@@ -5,7 +5,14 @@
 </template>
 
 <script>
-
+export default {
+  created() {
+    console.log(this)
+  },
+  mounted() {
+    console.log(this)
+  }
+}
 </script>
 
 <style>

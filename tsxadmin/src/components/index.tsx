@@ -1,6 +1,7 @@
-import HelloWorld from './helloWorld/index'
+import CategoryEdit from './CategoryEdit/index'
+import ItemEdit from './ItemEdit/index'
 import { App } from 'vue'
-const components = [HelloWorld];
+const components = [ItemEdit,CategoryEdit]
 const install = (app: App) => {
   components.forEach((component) => {
     app.use(component.install)
@@ -8,6 +9,7 @@ const install = (app: App) => {
 }
 const componentLists = {
   install,
-  HelloWorld,
+  ItemEdit,
+  CategoryEdit
 }
 export default componentLists

@@ -7,7 +7,7 @@ const productionGzipExtensions = ["js", "css"];
 // const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  publicPath: "/tsxadmin",
+  publicPath: "/",
   lintOnSave: false,
   runtimeCompiler: true,
   // publicPath: './', // 设置打包文件相对路径
@@ -15,12 +15,11 @@ module.exports = {
   devServer: {
     https: false,
     open: true,
-    host: '10.70.22.139', // 这里本地的话换成localhost就好
+    host: 'localhost', // 这里本地的话换成localhost就好,如果后台前台需要过nginx，就设置成自己的ip
     port: 5000,
     proxy: {
       "/api": {
         target: "http://127.0.0.1:3000", //目标路径
-        //target:'http://10.2.4.150:8085',   //目标路径
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",
