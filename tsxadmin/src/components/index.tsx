@@ -1,5 +1,5 @@
-import CategoryEdit from './CategoryEdit/index'
-import ItemEdit from './ItemEdit/index'
+import CategoryEdit from './Category/index'
+import ItemEdit from './Item/index'
 import { App } from 'vue'
 const components = [ItemEdit,CategoryEdit]
 const install = (app: App) => {

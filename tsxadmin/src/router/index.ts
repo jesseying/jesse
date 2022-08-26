@@ -9,16 +9,16 @@ const routes: Array<RouteRecordRaw> = [
       // News classification
       {
         path: '/categories/create',
-        component: () => import('../components/CategoryEdit/CategoryEdit')
+        component: () => import('../components/Category/CategoryEdit')
       },
-      // { path : '/categories/edit/:id', component : CategoryEdit, props: true },
+      // { path : '/categories/edit/:id', component : Category, props: true },
       // { path : '/categories/list', component : CategoryList },
       // Item classification
       {
         path: '/items/create',
-        component: () => import('../components/ItemEdit/ItemEdit')
+        component: () => import('../components/Item/ItemEdit')
       },
-      // { path : '/items/edit/:id', component : ItemEdit, props: true },
+      // { path : '/items/edit/:id', component : Item, props: true },
       // { path : '/items/list', component : ItemList },
       // Hero classification
       // { path : '/heroes/create', component : HeroEdit },
