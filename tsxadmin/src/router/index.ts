@@ -8,11 +8,20 @@ const routes: Array<RouteRecordRaw> = [
     children : [
       // News classification
       {
-        path: '/categories/create',
+        path: '/Categories/create',
         component: () => import('../components/Category/CategoryEdit')
       },
-      // { path : '/categories/edit/:id', component : Category, props: true },
-      // { path : '/categories/list', component : CategoryList },
+      {
+        path: '/Categories/edit/:id',
+        component: () => import('../components/Category/CategoryEdit'),
+        props: true
+      },
+      {
+        path: '/Categories',
+        component: () => import('../components/Categories/CategoriesList')
+      },
+      // { path : '/Categories/edit/:id', component : Category, props: true },
+      // { path : '/Categories/list', component : CategoryList },
       // Item classification
       {
         path: '/items/create',

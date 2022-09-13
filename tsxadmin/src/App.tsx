@@ -1,13 +1,12 @@
 import { defineComponent, ref } from 'vue'
 import { RouterView } from 'vue-router'
+import './App.css'
 
-export default defineComponent({
-  setup() {
-    // const msg = ref<string>('Hello vue3 and TSX');
-    return () => (
-        <>
-          <RouterView />
-        </>
-    )
-  },
+
+export default defineComponent(() =>{
+  return () => (
+      <>
+        <RouterView />
+      </>
+  )
 })

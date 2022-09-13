@@ -52,7 +52,7 @@
                         <el-col :span="8">
                             <el-link @click="router.push({ name: 'account/balance' })" type="primary">{{ userInfo.money }}</el-link>
                         </el-col>
-                    </el-row>
+                    </el-row>t
                     <el-row class="data-item">
                         <el-col class="lastlogin title" :span="4">{{ $t('user.user.Last login') }}</el-col>
                         <el-col class="lastlogin value" :span="8">{{ timeFormat(userInfo.lastlogintime) }}</el-col>

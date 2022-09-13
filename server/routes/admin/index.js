@@ -51,12 +51,12 @@ module.exports = app => {
 	})
 	
 	// 全局路由设置
-	app.use('/admin/api/rest/:resource',awthMiddleware(), resourceMiddleware(), router)
+	app.use('/admin/api/rest/:resource', resourceMiddleware(), router)
 	
 	// 图片上传api
 	const multer = require('multer')
 	const upload = multer({dest: __dirname + '/../../uploads'})
-	app.post('/admin/api/upload',awthMiddleware(), upload.single('file'),async (req,res) => {
+	app.post('/admin/api/upload', upload.single('file'),async (req,res) => {
 		const file = req.file
 		file.url = `http://localhost:3000/uploads/${file.filename}`
 		res.send(file)

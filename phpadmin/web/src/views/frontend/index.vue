@@ -9,9 +9,9 @@
                         <div class="main-content">
                             {{ $t('index.Steve Jobs') }}
                         </div>
-                        <el-button v-if="memberCenter.state.open" @click="$router.push('/user')" color="#ffffff" size="large">{{
-                            $t('index.Member Center')
-                        }}</el-button>
+                        <el-button v-if="memberCenter.state.open" @click="$router.push('/user')" color="#ffffff" size="large">
+                          {{ $t('index.Member Center') }}
+                        </el-button>
                     </div>
                     <div class="main-right">
                         <img :src="indexCover" alt="" />

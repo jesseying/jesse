@@ -31,9 +31,9 @@ const router = new Router({
       component: Main,
       children : [
         // News classification
-        { path : '/categories/create', component : CategoryEdit },
-        { path : '/categories/edit/:id', component : CategoryEdit, props: true },
-        { path : '/categories/list', component : CategoryList },
+        { path : '/Categories/create', component : CategoryEdit },
+        { path : '/Categories/edit/:id', component : CategoryEdit, props: true },
+        { path : '/Categories/list', component : CategoryList },
         // Item classification
         { path : '/items/create', component : ItemEdit },
         { path : '/items/edit/:id', component : ItemEdit, props: true },

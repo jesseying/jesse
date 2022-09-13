@@ -85,7 +85,7 @@ module.exports = app => {
 		const data = await Hero
 			.findById(req.params.id)
 			// partners.hero
-			.populate('categories items1 items2')
+			.populate('Categories items1 items2')
 			.lean()
 		res.send(data)
 	})
