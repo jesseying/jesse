@@ -83,11 +83,11 @@ function BasicUsage() {
             value="1">
           <MenuItem
               value="1-1">
-            <Link to='/createCategory'>创建分类</Link>
+            <Link to='/createCategory' className='linkTitle'>创建分类</Link>
           </MenuItem>
           <MenuItem
               value="1-2">
-            <Link to='/categoriesList'>分类列表</Link>
+            <Link to='/categoriesList' className='linkTitle'>分类列表</Link>
           </MenuItem>
         </SubMenu>
         <MenuItem value='root'>
