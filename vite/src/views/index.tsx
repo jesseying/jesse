@@ -20,48 +20,46 @@ import CreateCategory from './category/createCategory'
 import CategoriesList from './category/categoriesList'
 
 const { SubMenu, HeadMenu, MenuItem } = Menu
-
 const { Header, Content, Footer, Aside } = Layout
 
 export default function BasicDivider() {
+
   return (
-      <div className='tdesign-demo-item--layout'>
-        <Layout>
-          {/*<Header>*/}
-          {/*  <HeadMenu*/}
-          {/*      value='item1'*/}
-          {/*      logo={<div><p>logo</p></div>}*/}
-          {/*      operations={*/}
-          {/*        <div className='t-menu__operations'>*/}
-          {/*          <SearchIcon className='t-menu__operations-icon' />*/}
-          {/*          <NotificationFilledIcon className='t-menu__operations-icon' />*/}
-          {/*          <HomeIcon className='t-menu__operations-icon' />*/}
-          {/*        </div>*/}
-          {/*      }*/}
-          {/*  >*/}
-          {/*    <MenuItem value='item1'>已选内容</MenuItem>*/}
-          {/*    <MenuItem value='item2'>菜单内容一</MenuItem>*/}
-          {/*    <MenuItem value='item3'>菜单内容二</MenuItem>*/}
-          {/*    <MenuItem value='item4' disabled>*/}
-          {/*      菜单内容三*/}
-          {/*    </MenuItem>*/}
-          {/*  </HeadMenu>*/}
-          {/*</Header>*/}
+      <div className='tdesign-demo-item--layout' style={{height: '100%'}}>
+        <Layout style={{height: '100%'}}>
+          <Header>
+            <HeadMenu
+                value='item1'
+                logo={<div></div>}
+                operations={
+                  <div className='t-menu__operations'>
+                    <SearchIcon className='t-menu__operations-icon' />
+                    <NotificationFilledIcon className='t-menu__operations-icon' />
+                    <HomeIcon className='t-menu__operations-icon' />
+                  </div>
+                }
+            >
+              {/*<MenuItem value='item1'>已选内容</MenuItem>*/}
+              {/*<MenuItem value='item2'>菜单内容一</MenuItem>*/}
+              {/*<MenuItem value='item3'>菜单内容二</MenuItem>*/}
+              {/*<MenuItem value='item4' disabled>*/}
+              {/*  菜单内容三*/}
+              {/*</MenuItem>*/}
+            </HeadMenu>
+          </Header>
           <Layout>
             <Aside style={{ borderTop: '1px solid var(--component-border)' }}>
               <BasicUsage />
             </Aside>
             <Layout>
               <Content>
-                <div>
-                  <Route path='/createCategory'>
-                    <CreateCategory />
-                  </Route>
-                  <Route path='/categoriesList'>
-                    <CategoriesList />
-                  </Route>
-                  <Redirect to='createCategory' />
-                </div>
+                <Route path='/createCategory'>
+                  <CreateCategory />
+                </Route>
+                <Route path='/categoriesList'>
+                  <CategoriesList />
+                </Route>
+                <Redirect to='createCategory' />
               </Content>
               <Footer style={{textAlign: 'center'}}>版权所有： @Jesse 备案号：辽ICP备2022004983号</Footer>
             </Layout>
@@ -73,7 +71,7 @@ export default function BasicDivider() {
 
 function BasicUsage() {
   return (
-      <Menu theme='light' value='dashboard' style={{ marginRight: 50, height: 780, padding: 0 }}>
+      <Menu theme='light' value='dashboard' style={{ marginRight: 50,height: '100%', padding: 0 }}>
         <MenuItem value='dashboard' icon={<DashboardIcon />}>
           仪表盘
         </MenuItem>
@@ -81,6 +79,7 @@ function BasicUsage() {
             icon={<CodeIcon />}
             title={<span>分类</span>}
             value="1">
+
           <MenuItem
               value="1-1">
             <Link to='/createCategory' className='linkTitle'>创建分类</Link>
